@@ -87,6 +87,9 @@ top: 80%;
         transition:  0.2s ease-out;
         display: none;
 }
+#giphytable {
+  text-align: left;
+}
 
 #triviai {
   height: 200px;
@@ -102,6 +105,14 @@ top: 80%;
 #triviai:hover {
   opacity: 1;
 }
+.triviainfo {
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  display: none;
+}
+#triviatable{
+  text-align: left;
+}
 
 #hangmani {
   height: 200px;
@@ -109,7 +120,9 @@ top: 80%;
     opacity: 0.8;
     -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-position: absolute (780,400);
+position: absolute;
+left: 600px;
+top: 100%;
 }
 .about {
     display: none;
@@ -136,7 +149,26 @@ position: absolute (780,400);
     width: 40%;
     font-size: 20px;
 }
-
+#button:hover{
+  background-color: rgb(98,74,130,0.3);
+  border: 0px; 
+}
+.nav {
+  /* position: absolute;
+  bottom: 30px; 
+  left: 0px; 
+  background: transparent;
+  height:50px; 
+  width: 700px; */
+}
+i.fas,
+i.fab {
+    margin-top: 30px;
+  color: rgb(0,0,0,0.7);
+}
+.links {
+  display: none;
+}
 .splitleft { 
 
         position: absolute;
@@ -146,7 +178,7 @@ position: absolute (780,400);
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(117,91,150,0.3);
+        background-color: rgb(98,74,130,0.3);
         transform: skewY(50deg);
         transform-origin: top left;
       }
@@ -171,7 +203,7 @@ position: absolute (780,400);
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(117,91,150,0.3);
+        background-color: rgb(98,74,130,0.3);
         transform: skewY(-50deg);
         transform-origin: top right;
       }
@@ -246,13 +278,26 @@ position: absolute (780,400);
         font-size: 50px;
         letter-spacing: 20px;
         margin-top: -60px;
-        padding-left: 10px;
+        padding-left: 0px;
       }
       #title span {
-        background: -webkit-linear-gradient(white, #38495a);
+        background: -webkit-linear-gradient(white, #5e3d6d);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      #title2 {
+          background: -webkit-linear-gradient(white, #5e3d6d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 15px;
+          letter-spacing: 4px;
+        font-style: italic;
+          font-weight: bold; 
+          text-align: center;
+        font-family: "lato", sans-serif;
+        height: 20px;
+        }
+      
       
       @keyframes animStar {
         from {

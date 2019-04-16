@@ -5,6 +5,9 @@ var driftc = $(".driftcontent");
 var drift = $("#drift");
 var giphy = $("#giphyi");
 var giphin = $(".giphyinfo");
+var triviain = $(".triviainfo");
+var trivia = $("#triviai");
+
 
 $("#button").on("click", function () {
 title.fadeToggle("slow","linear");
@@ -27,16 +30,36 @@ $(".splitright").css({
     "transition": "transform 2s",
     "transform-origin":"bottom right"
 })
+$(".links").fadeToggle("3000");
+$(".links").css({
+    "position":"absolute",
+    "top":"0",
+    "left":"0",
+    "margin-top":"0px"
+   
+})
+$('i.fab').css({
+    "font-size": "5em",
+    "letter-spacing":"50px"
+})
 }
 
 
 (drift).on("click", function () {
 giphin.hide();
+triviain.hide();
        driftc.show();
    }
 );
 
 (giphy).on("click", function (){
     driftc.hide();
+    triviain.hide();
     giphin.show();
 });
+
+(trivia).on("click", function (){
+    driftc.hide();
+    giphin.hide();
+    triviain.show();
+})
