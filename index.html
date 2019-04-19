@@ -1,170 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fiorie Tellez</title>
-          <!--Import Google Icon Font-->
-          <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-      <!-- Compiled and minified CSS -->
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-      <!--google font-->
-      <!-- <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!--google font-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     
 <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet"> -->
-  <!--My stylesheet-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--My stylesheet-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="portfolio2.css">    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="portfolio2.css">
 </head>
+
 <body>
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-    <div class="container" id="home">
-           
-        <div class="splitleft">
-            
-           </div>
-           <div class="lineleft"></div>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
 
-                       <div id="title"> <span>Hi I'm Fiore!
-                        </span><br><p id="title2">Full stack web developer extraordinaire</p>
-                        <button id="button"><span>Click to see some creations</button>
-                       <br>
-                
-                        <a href="https://github.com/fioriecheyenne" target="_"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/fiorie-tellez-31b778aa/" target="_"><i class="fab fa-linkedin fa-2x"></i></a></div>
-                </div> </span>
-                       <!-- <span>
-                            <a class="waves-effect waves-light btn">My work</button></a>
-                                <a class="waves-effect waves-light btn">About me</button></a></span></div> -->
-                       <!-- <p id="intro">Web developer extraordinaire</p> -->
-        <div class="splitright">
-           
+    <!--For left half of triangle-->
+    <div class="splitleft">
+
+    </div>
+
+    <!--"Home" page-->
+    <div id="title"> <span>Hi I'm Fiore!
+        </span><br>
+        <p id="title2">Full stack web developer extraordinaire</p>
+        <button id="button"><span>Click to see some creations</button>
+        <br>
+
+        <!--Inital links-->
+        <a href="https://github.com/fioriecheyenne" target="_"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/fiorie-tellez-31b778aa/" target="_"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+        <a href=""><i class="fas fa-at fa-2x"></i></a>
+    </div>
+    </div> </span>
+
+    <!--Right side of triangle-->
+    <div class="splitright">
+
+    </div>
+    <!--for project "page"-->
+    <div class="works">
+        <span>
+            <!--drift info-->
+            <img id="drift" src="images/driftweather.PNG">
+
+
+            <img id="giphyi" src="images/giphy.PNG">
+            <img id="triviai" src="images/trivia.PNG">
+
+            <!-- <img id="hangmani" src="images/hangman.PNG"> -->
+
+        </span>
+    </div>
+    <div class="projectinfo">
+
+        <!--drift project info-->
+        <div class="driftcontent">
+            <b>Drift is a web & mobile application where users can search
+                any location within the U.S to see different activies in the area. </b>
+            <br>
+            <BR>
+            <table id="drifttable">
+                <tr>
+                    <th>
+                        <b>This program uses: </b></th>
+                    <th>
+                        <b> Created by: </b></th>
+                </tr>
+                <tr>
+                    <td>
+                        <li>AccuWeather API</li>
+                        <li>leezair API</li>
+                        <li>Firebase</li>
+                        <li>Semantic UI</li>
+                        <li>jquery && JavaScript</li>
+                    </td>
+
+                    <td>
+
+                        <li>Fiore Tellez</li>
+                        <li>Jonathan Sherman</li>
+                        <li>Tyler Stuart</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <a href="https://t-stu21.github.io/Project1/" target="_"><b>View the page!</b></a><br>
+            <a href="https://github.com/t-stu21/Project1" target="_"><b>Github repository</b></a>
+            </p>
+
         </div>
-        <div class="lineright"></div>
 
+        <!--giphy project info-->
+        <div class="giphyinfo"><b>
+                This project allows you to add your own topic button - when clicked will pull 10 random
+                gifs using the giphy API</b><br><br>
+            <table id="giphytable">
+                <tr>
+                    <th><b>This program uses:</b></th>
+                    <th><b>Created by: </th></b>
+                </tr>
+                <tr>
+                    <td>
 
-        <div class="works">
-            <span>
-        <!--drift info-->
-           <img id ="drift" src="images/driftweather.PNG">
+                        <li>
+                            Giphy api
+                        </li>
+                        <li>Jquery </li>
+                        <li> JavaScript</li>
+                        <li>Bootstrap</li>
+                        </ul>
+                    </td>
+                    <td>Fiore Tellez</td>
+                </tr>
 
-        
-                <img id="giphyi" src="images/giphy.PNG">
-                <img id="triviai" src="images/trivia.PNG">
+            </table><br>
+            <a href="https://fioriecheyenne.github.io/giphyAPI/" target="_"><b>View the page!</b></a><br>
+            <a href="https://github.com/fioriecheyenne/giphyAPI" target="_"><b>View github repository</b></a>
 
-                <!-- <img id="hangmani" src="images/hangman.PNG"> -->
-
-            </span>
+            </p>
         </div>
-           <div class="projectinfo">
-
-                <div class="driftcontent">
-                        <b>Drift is a web & mobile application where users can search 
-                        any location within the U.S to see different activies in the area. </b>
-                        <br>
-                       <BR>
-                         <table id="drifttable">
-                             <tr>
-                                 <th>
-                                         <b>This program uses: </b></th>
-                                         <th>
-                                             <b> Created by: </b></th></tr>
-                                         <tr>
-                                             <td>
-                                                     <li>AccuWeather API</li>
-                                                     <li>leezair API</li>
-                                                     <li>Firebase</li>
-                                                     <li>Semantic UI</li>
-                                                     <li>jquery && JavaScript</li>
-                                             </td>
-                                         
-                                     <td>
-                                             
-                                                     <li>Fiore Tellez</li>
-                                                      <li>Jonathan Sherman</li>
-                                                         <li>Tyler Stuart</li> 
-                                              </ul>
-                                             </td>
-                             </tr>
-                         </table>
-                         <br>
-                       <a href="https://t-stu21.github.io/Project1/" target="_"><b>View the page!</b></a><br>
-                       <a href="https://github.com/t-stu21/Project1" target="_"><b>Github repository</b></a>
-                        </p>
-
-                </div>
-                   <div class="giphyinfo"><b>
-                       This project allows you to add your own topic button - when clicked will pull 10 random 
-                       gifs using the giphy API</b><br><br>
-                       <table id="giphytable">
-                           <tr>
-                               <th><b>This program uses:</b></th>
-                               <th><b>Created by: </th></b>
-                               </tr>
-                               <tr>
-                                   <td>
-                                       
-                                           <li>
-                                               Giphy api
-                                           </li>
-                                           <li>Jquery </li>
-                                           <li> JavaScript</li>
-                                           <li>Bootstrap</li>
-                                       </ul>
-                                   </td>
-                                   <td>Fiore Tellez</td>
-                               </tr>
-                           
-                       </table><br>
-                       <a href="https://fioriecheyenne.github.io/giphyAPI/" target="_"><b>View the page!</b></a><br>
-<a href="https://github.com/fioriecheyenne/giphyAPI" target="_"><b>View github repository</b></a>
-                   </p>
-               </div>
-
-               <div class="triviainfo"><b>GLIB GLOB is a Rick and Morty themed trivia game, that will show you gifs of the answer regardless of if the question was answered correctly. It tracks your correct, incorrect and abandoned answers</b><br>
-            <br><br><table id="triviatable">
+        <!--Trivia project info-->
+        <div class="triviainfo"><b>GLIB GLOB is a Rick and Morty themed trivia game, that will show you gifs of the
+                answer regardless of if the question was answered correctly. It tracks your correct, incorrect and
+                abandoned answers</b><br>
+            <br><br>
+            <table id="triviatable">
                 <tr>
                     <th><b>This game uses: </b></th>
                     <th><b>Created by:</b></th>
-                    </tr>
-                    <tr>
-                        <td><li>Jquery</li>
+                </tr>
+                <tr>
+                    <td>
+                        <li>Jquery</li>
                         <li>Bootstrap</li>
-                    <li>
-                        Giphy api
-                    </li></ul></td>
+                        <li>
+                            Giphy api
+                        </li>
+                        </ul>
+                    </td>
 
                     <td>Fiore Tellez</td>
-                    </tr>
+                </tr>
                 </tr>
             </table>
             <br>
             <a href="https://fioriecheyenne.github.io/trivagame/" target="_"><b>Play the game!</b></a><br>
-        <a href="https://github.com/fioriecheyenne/trivagame" target="_"><b>View the github repository!</b> </a></div>
-            </div>
-       <div class="links">
-            <a href="https://github.com/fioriecheyenne" target="_"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/fiorie-tellez-31b778aa/" target="_"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <i class="fas fa-home" id="home"></i></a>
-                    </span>
+            <a href="https://github.com/fioriecheyenne/trivagame" target="_"><b>View the github repository!</b> </a>
         </div>
-        <div class="about">
-            Content content 
-            content 
-        </div>
-                <!-- </p> -->
-              
-              
-  
-        <!-- Compiled and minified JavaScript -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        My Javascript --> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="portfolio2.js"></script>
+    </div>
+
+
+
+    <!--Top left nav links on project page -->
+    <div class="links">
+        <a href="https://github.com/fioriecheyenne" target="_"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/fiorie-tellez-31b778aa/" target="_"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+        <i class="fas fa-home fa-2x" id="home"></i>
+        <i class="fas fa-at fa-2x" id="at"></i></a>
+        </span>
+    </div>
+
+    <!--contact "page"-->
+    <div class="contactform">
+
+        <form action="https://formspree.io/fioriecheyenne@gmail.com" method="POST" id="contactme">
+            <!-- <div class="form-row">
+                <div class="col"> -->
+            <input type="text" name="name" placeholder="Whats your name?" id="sendername">
+            <!-- </div>
+    <div class="col"> -->
+            <input type="email" name="email" placeholder="Whats your email?" id="senderemail">
+            <br>
+            <!-- </div>
+    <div class="form-row"> -->
+            <textarea name="message" input type="textarea" placeholder="Your message?"
+                id="sendmsg"></textarea><br>
+            <button type="submit" id="name">Send!</button>
+        </form>
+    </div>
+
+
+    </div>
+
+
+
+
+    </div>
+    <!-- </p> -->
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        My Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="portfolio2.js"></script>
 </body>
+
 </html>

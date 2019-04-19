@@ -7,74 +7,126 @@ var giphy = $("#giphyi");
 var giphin = $(".giphyinfo");
 var triviain = $(".triviainfo");
 var trivia = $("#triviai");
-var home = $("#home");
-
+var home = $(".fa-home");
+var topLnav = $(".links");
+var contact = $(".contactform");
+var atMe = $("#at");
+var descrip = $(".projectinfo");
+//see projects page
 $("#button").on("click", function () {
-title.fadeToggle(900);
-triangles();
-showWorks();
+    title.fadeToggle(900);
+    triangles();
+    showWorks();
 })
 
-function showWorks(){
+//show the project things
+function showWorks() {
     works.fadeToggle(5000);
 }
-
-// function hideWorks() {
-//     works.fadeToggle(3000);
-// }
-
-function triangles(){
-$(".splitleft").css({
-    "transform":"skewY(315deg)",
-    "transition": "transform 2s",
-    "transform-origin":"bottom left"   
-})
-$(".splitright").css({
-    "transform":"skewY(-315deg)",
-    "transition": "transform 2s",
-    "transform-origin":"bottom right"
-})
-$(".links").fadeToggle("5000");
-$(".links").css({
-    "position":"absolute",
-    "top":"0",
-    "left":"0",
-    "margin-top":"0px",
-    "margin-left":"10px"
-   
-})
-$('i.fab').css({
-    "font-size": "5em",
-    "letter-spacing":"50px"
-})
-$('i.fas').css({
-    "font-size":"5em",
-    "letter-spacing":"50px"
-})
+//hide the project things
+function hideWorks() {
+    works.hide();
 }
 
+//upright triangle display
+function triangles() {
+    $(".splitleft").css({
+        "transform": "skewY(315deg)",
+        "transition": "transform 2s",
+        "transform-origin": "bottom left"
+    })
+    $(".splitright").css({
+        "transform": "skewY(-315deg)",
+        "transition": "transform 2s",
+        "transform-origin": "bottom right"
+    })
 
+    //top left nav 
+    $(".links").fadeToggle("5000");
+    $(".links").css({
+        "position": "absolute",
+        "top": "0",
+        "left": "0",
+        "margin-top": "0px",
+        "margin-left": "10px",
+        "font-size": "2em",
+        "letter-spacing": "10px"
+
+    })
+}
+
+// show drift descrip
 (drift).on("click", function () {
-giphin.hide();
-triviain.hide();
-       driftc.show();
-   }
+    giphin.hide();
+    triviain.hide();
+    driftc.show();
+}
 );
 
-(giphy).on("click", function (){
+
+// show the giphy descrip
+(giphy).on("click", function () {
     driftc.hide();
     triviain.hide();
     giphin.show();
 });
 
-(trivia).on("click", function (){
+
+//show da trivia descrip
+(trivia).on("click", function () {
     driftc.hide();
     giphin.hide();
     triviain.show();
 });
 
-// (home).on("click", function (){
-// hideWorks();
-// title.fadeToggle(3000);
 
-// })
+
+//do the things when ya click the home button
+(home).on("click", function () {
+    hideWorks();
+    triangles2();
+    title.fadeToggle(4000);
+    topLnav.fadeOut(1000);
+})
+
+//back to upside-down triangle display
+function triangles2() {
+    $(".splitleft").css({
+        "transform": "skewY(50deg)",
+        "transition": "transform 2s",
+        "transform-origin": "bottom left"
+    })
+    $(".splitright").css({
+        "transform": "skewY(-50deg)",
+        "transition": "transform 2s",
+        "transform-origin": "bottom right"
+    })
+}
+(atMe).on("click", function () {
+    contact.fadeToggle(3000);
+    title.hide();
+    works.hide();
+    triangles3();
+    descrip.hide();
+})
+
+function triangles3() {
+    $(".splitleft").css({
+        "transform": "skewY(20deg)",
+        "transition": "transform 2s",
+        "transform-origin": "center"
+    })
+    $(".splitright").css({
+        "display": "none"
+        // ,
+        // "transition": "transform 1s",
+        // "transform-origin": "center"
+    })
+}
+
+// slashy bar in center from top left to bottome right 
+//   $(".splitleft").css({
+// "transform": "skewY(20deg)",
+//     "transition": "transform 2s",
+//         "transform-origin": "center"
+//     })

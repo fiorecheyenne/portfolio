@@ -1,12 +1,38 @@
- #name { 
-    margin-top: 0px;
-    position: absolute;
-    left: 50px;
-    bottom: 200px;
-    color: rgb(255,255,255, 0.6);
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 100px;
-}
+ /*name display*/
+    #title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "lato", sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        letter-spacing: 20px;
+        margin-top: -60px;
+        padding-left: 0px;
+      }
+      #title span {
+        background: -webkit-linear-gradient(white, #5e3d6d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #title2 {
+          background: -webkit-linear-gradient(white, #5e3d6d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 15px;
+          letter-spacing: 4px;
+        font-style: italic;
+          font-weight: bold; 
+          text-align: center;
+        font-family: "lato", sans-serif;
+        height: 20px;
+        }
+      
+
+/* project display */
 .works {
     display: none;
     position: absolute;
@@ -43,7 +69,7 @@
         
   }
 
-
+/*drift project*/
 #drift {
     height: 200px;
     width: 210px;
@@ -67,7 +93,7 @@ opacity: 1;
 #drifttable {
     text-align: left;
 }
-  
+  /*giphy homework*/
 #giphyi {
     height: 200px;
     width: 210px; 
@@ -90,7 +116,7 @@ top: 80%;
 #giphytable {
   text-align: left;
 }
-
+/*trivia homework*/
 #triviai {
   height: 200px;
     width: 210px; 
@@ -113,7 +139,7 @@ top: 80%;
 #triviatable{
   text-align: left;
 }
-
+/*hangman homework*/
 #hangmani {
   height: 200px;
     width: 210px; 
@@ -139,6 +165,8 @@ top: 100%;
     margin-top: -60px;
     padding-left: 10px;
 }
+
+/*button on home page*/
 #button {
     background-color: rgb(0,0,0,0.5);
     color: white; 
@@ -168,6 +196,28 @@ i.fab {
 }
 .links {
   display: none;
+}
+
+.contactform {
+  display: none;
+  position: absolute;
+top: 30%;
+margin-left: 20%;
+width: 70%;
+height: 100%;
+}
+#sendername {
+  width:40%;
+  height:24px;
+}
+#senderemail {
+  width: 40%;
+   height:24px;
+}
+#sendmsg {
+  width: 80.5%;
+  margin-top:20px;
+   height: 50px;
 }
 .splitleft { 
 
@@ -266,45 +316,14 @@ i.fab {
         box-shadow: 1591px 1369px #FFF , 918px 1214px #FFF , 1859px 1585px #FFF , 199px 1720px #FFF , 1435px 1769px #FFF , 930px 332px #FFF , 1133px 506px #FFF , 633px 1687px #FFF , 106px 1503px #FFF , 443px 413px #FFF , 375px 1045px #FFF , 1962px 804px #FFF , 48px 991px #FFF , 1121px 363px #FFF , 987px 944px #FFF , 492px 1844px #FFF , 580px 1546px #FFF , 669px 464px #FFF , 376px 301px #FFF , 1826px 1161px #FFF , 966px 1581px #FFF , 50px 57px #FFF , 69px 1086px #FFF , 976px 582px #FFF , 125px 769px #FFF , 1342px 200px #FFF , 962px 1279px #FFF , 990px 138px #FFF , 368px 1194px #FFF , 1714px 762px #FFF , 1357px 634px #FFF , 1069px 645px #FFF , 763px 724px #FFF , 217px 1844px #FFF , 1230px 1595px #FFF , 1149px 959px #FFF , 283px 564px #FFF , 1100px 807px #FFF , 859px 1448px #FFF , 419px 615px #FFF , 378px 643px #FFF , 202px 876px #FFF , 1435px 1289px #FFF , 241px 1341px #FFF , 1237px 625px #FFF , 121px 1955px #FFF , 1983px 1139px #FFF , 436px 850px #FFF , 995px 1656px #FFF , 400px 198px #FFF , 1168px 121px #FFF , 1539px 1299px #FFF , 25px 748px #FFF , 1130px 91px #FFF , 1072px 501px #FFF , 1404px 1199px #FFF , 197px 1256px #FFF , 993px 1332px #FFF , 667px 1756px #FFF , 1671px 200px #FFF , 42px 847px #FFF , 1564px 613px #FFF , 370px 1796px #FFF , 1464px 1789px #FFF , 1594px 597px #FFF , 1151px 889px #FFF , 1800px 348px #FFF , 1040px 616px #FFF , 494px 1779px #FFF , 451px 1221px #FFF , 500px 188px #FFF , 23px 222px #FFF , 1554px 103px #FFF , 333px 793px #FFF , 1030px 1362px #FFF , 1469px 1151px #FFF , 1959px 1040px #FFF , 1811px 92px #FFF , 1546px 343px #FFF , 926px 2px #FFF , 1183px 530px #FFF , 149px 1487px #FFF , 299px 977px #FFF , 314px 1827px #FFF , 1969px 1071px #FFF , 1204px 1779px #FFF , 16px 905px #FFF , 134px 372px #FFF , 1161px 776px #FFF , 1548px 1189px #FFF , 1761px 920px #FFF , 146px 1329px #FFF , 1421px 1323px #FFF , 984px 814px #FFF , 731px 1085px #FFF , 89px 1906px #FFF , 452px 1263px #FFF , 580px 1448px #FFF , 959px 637px #FFF , 1561px 349px #FFF;
       }
       
-      #title {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        color: #FFF;
-        text-align: center;
-        font-family: "lato", sans-serif;
-        font-weight: 300;
-        font-size: 50px;
-        letter-spacing: 20px;
-        margin-top: -60px;
-        padding-left: 0px;
-      }
-      #title span {
-        background: -webkit-linear-gradient(white, #5e3d6d);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      #title2 {
-          background: -webkit-linear-gradient(white, #5e3d6d);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-size: 15px;
-          letter-spacing: 4px;
-        font-style: italic;
-          font-weight: bold; 
-          text-align: center;
-        font-family: "lato", sans-serif;
-        height: 20px;
-        }
-      
+  
       
       @keyframes animStar {
         from {
           transform: translateY(0px);
         }
         to {
-          transform: translateY(-1000px);
+          transform: translateY(-2000px);
         }
       }
       
