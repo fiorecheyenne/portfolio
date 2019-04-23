@@ -11,7 +11,9 @@ var home = $(".fa-home");
 var topLnav = $(".links");
 var contact = $(".contactform");
 var atMe = $("#at");
+var atMe2 = $("#at2");
 var descrip = $(".projectinfo");
+
 //see projects page
 $("#button").on("click", function() {
   title.fadeToggle(900);
@@ -114,6 +116,8 @@ atMe.on("click", function() {
   triangles3();
   descrip.hide();
 });
+
+atMe2.on("click", function() {});
 
 function triangles3() {
   $(".splitleft").css({
