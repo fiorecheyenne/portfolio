@@ -30,7 +30,9 @@
   font-family: "lato", sans-serif;
   height: 20px;
 }
-
+.descript-head {
+  display: none;
+}
 /* project display */
 .works {
   display: none;
