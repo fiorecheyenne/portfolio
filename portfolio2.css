@@ -110,7 +110,7 @@
   text-align: left;
 }
 /*giphy homework*/
-#giphyi {
+#budgeti {
   cursor: pointer;
   height: 200px;
   width: 210px;
@@ -139,15 +139,15 @@
   left: 520px;
   top: 80%;
 }
-#giphyi:hover {
+#budgeti:hover {
   opacity: 1;
 }
-.giphyinfo {
+.budgetbuddyinfo {
   overflow: hidden;
   transition: 0.2s ease-out;
   display: none;
 }
-#giphytable {
+#budgettable {
   text-align: left;
 }
 /*trivia homework*/
